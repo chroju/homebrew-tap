@@ -5,25 +5,25 @@
 class Parade < Formula
   desc "Parade is a simple CLI tool for AWS SSM parameter store."
   homepage "https://github.com/chroju/parade"
-  version "0.3.1"
+  version "0.3.2"
   license "MIT"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/chroju/parade/releases/download/v0.3.1/parade_0.3.1_Darwin_x86_64.tar.gz"
-    sha256 "a5eac30961df57fe6d6ed0949524c7c2bd667caf6a4e7ea92271f0966d7cfce8"
+    url "https://github.com/chroju/parade/releases/download/v0.3.2/parade_0.3.2_Darwin_x86_64.tar.gz"
+    sha256 "2275218683cb866eac7f04157b45dced7dedb5e644e18123764bbdca6f4f9ce0"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/chroju/parade/releases/download/v0.3.1/parade_0.3.1_Darwin_arm64.tar.gz"
-    sha256 "ee505e50a28f655fa1a1750471294416732053131791f830aa369183a5988ebe"
+    url "https://github.com/chroju/parade/releases/download/v0.3.2/parade_0.3.2_Darwin_arm64.tar.gz"
+    sha256 "ca3c230c71ef1a0f8d940c96fccc074a235c80ee65cfb80266c8ddf1839691c4"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/chroju/parade/releases/download/v0.3.1/parade_0.3.1_Linux_x86_64.tar.gz"
-    sha256 "0613a68a438d3abbaf718ec162fab8e4c0102d54df1924b32c74f5b140503ac2"
+    url "https://github.com/chroju/parade/releases/download/v0.3.2/parade_0.3.2_Linux_x86_64.tar.gz"
+    sha256 "e6a49fe4caf1a4ff374ec9021ff9794bfcec745010645b5cf1fa89f1a5127f69"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/chroju/parade/releases/download/v0.3.1/parade_0.3.1_Linux_arm64.tar.gz"
-    sha256 "32a8d5b65b99bff5a1d689bfe101eef77fb0257a707dd9f3e9498825099c4c3a"
+    url "https://github.com/chroju/parade/releases/download/v0.3.2/parade_0.3.2_Linux_arm64.tar.gz"
+    sha256 "a5614bf334780131b0165f96809e258dc29bbf58addaf95040ee676c5162d36c"
   end
 
   def install
