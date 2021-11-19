@@ -2,7 +2,6 @@ class Tfcloud < Formula
   desc "Terraform Cloud cli tool."
   homepage "https://github.com/chroju/tfcloud"
   version "0.1.1"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/chroju/tfcloud/releases/download/v0.1.1/tfcloud_0.1.1_darwin_amd64.tar.gz"

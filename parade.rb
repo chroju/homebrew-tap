@@ -7,7 +7,6 @@ class Parade < Formula
   homepage "https://github.com/chroju/parade"
   version "0.3.2"
   license "MIT"
-  bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/chroju/parade/releases/download/v0.3.2/parade_0.3.2_Darwin_x86_64.tar.gz"

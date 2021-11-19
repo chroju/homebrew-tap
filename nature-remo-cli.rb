@@ -7,7 +7,6 @@ class NatureRemoCli < Formula
   homepage "https://github.com/chroju/nature-remo-cli"
   version "0.3.0"
   license "MIT"
-  bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/chroju/nature-remo-cli/releases/download/v0.3.0/nature-remo-cli_0.3.0_Darwin_x86_64.tar.gz"

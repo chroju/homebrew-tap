@@ -7,7 +7,6 @@ class Alfrednize < Formula
   homepage "https://github.com/chroju/alfrednize"
   version "0.1.0"
   license "MIT"
-  bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/chroju/alfrednize/releases/download/v0.1.0/alfrednize_0.1.0_Darwin_x86_64.tar.gz"
