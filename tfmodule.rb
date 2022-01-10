@@ -11,7 +11,7 @@ class Tfmodule < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/chroju/tfmodule/releases/download/v0.1.1/tfmodule_0.1.1_Darwin_x86_64.tar.gz"
-      sha256 "54d1b8c40a1763506b6178f24206851a08c168df1dc4a7a50fda2ceb6776f369"
+      sha256 "431252705ec0c664fdbe515ad3b54300d8badad32091e7a8237c68ad00ea7878"
 
       def install
         bin.install "tfmodule"
@@ -19,7 +19,7 @@ class Tfmodule < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/chroju/tfmodule/releases/download/v0.1.1/tfmodule_0.1.1_Darwin_arm64.tar.gz"
-      sha256 "c027410a06c88f38635e4c1a6060e75b5d34d10e0ba27226b42d61b42aef9770"
+      sha256 "723e503203c0a1535e815cc4b5fbf6f40dcc7c4fad1dfe95b34ef57b8673b936"
 
       def install
         bin.install "tfmodule"
@@ -30,7 +30,7 @@ class Tfmodule < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/chroju/tfmodule/releases/download/v0.1.1/tfmodule_0.1.1_Linux_arm64.tar.gz"
-      sha256 "86c6acf4efb1d48af17015c71353132693e24460fd3689bf71537aa5c5587b4a"
+      sha256 "49c314b67cab4f359e7dfe9bf7f3fcb92d9076fbfec0d6218dcbaf9f9789655c"
 
       def install
         bin.install "tfmodule"
@@ -38,7 +38,7 @@ class Tfmodule < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/chroju/tfmodule/releases/download/v0.1.1/tfmodule_0.1.1_Linux_x86_64.tar.gz"
-      sha256 "820e32c327c68c1bb3b7fe1b156f2dd9f83c812838e5fab87af28709038c0e12"
+      sha256 "ef0e95365786780c49346974f7db28f93c3446eb56f1080c9a3c4070f54b9a10"
 
       def install
         bin.install "tfmodule"
