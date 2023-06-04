@@ -5,21 +5,21 @@
 class Tfcloud < Formula
   desc "Terraform Cloud CLI tool"
   homepage "https://github.com/chroju/tfcloud"
-  version "0.2.3"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/chroju/tfcloud/releases/download/v0.2.3/tfcloud_0.2.3_Darwin_x86_64.tar.gz"
-      sha256 "55c10531a22eac53bc01389a237099e1a7d8baac0682ad33cc84627cce89509e"
+    if Hardware::CPU.arm?
+      url "https://github.com/chroju/tfcloud/releases/download/v0.3.0/tfcloud_0.3.0_Darwin_arm64.tar.gz"
+      sha256 "0288408df44d304eb4132ae14777efc36951af73cdbefc2d88d2f6aae54679c0"
 
       def install
         bin.install "tfcloud"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/chroju/tfcloud/releases/download/v0.2.3/tfcloud_0.2.3_Darwin_arm64.tar.gz"
-      sha256 "6911c26079a12c415029399a7779dd84fd424a6e53d8012c85f24a3ddaaf0455"
+    if Hardware::CPU.intel?
+      url "https://github.com/chroju/tfcloud/releases/download/v0.3.0/tfcloud_0.3.0_Darwin_x86_64.tar.gz"
+      sha256 "97caa4bbaa30ec8cfc93e51e3e60e6feac7b9db750092f30ee9c6488b19d622b"
 
       def install
         bin.install "tfcloud"
@@ -28,17 +28,17 @@ class Tfcloud < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chroju/tfcloud/releases/download/v0.2.3/tfcloud_0.2.3_Linux_arm64.tar.gz"
-      sha256 "00772a24986e17434e9def10c9734260cc76d3d27ac20222040e76c286de226f"
+    if Hardware::CPU.intel?
+      url "https://github.com/chroju/tfcloud/releases/download/v0.3.0/tfcloud_0.3.0_Linux_x86_64.tar.gz"
+      sha256 "d94e5d8fee8000862a0da82ef4f07f1072e0982386afd2e8d2009454aa7ca322"
 
       def install
         bin.install "tfcloud"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/chroju/tfcloud/releases/download/v0.2.3/tfcloud_0.2.3_Linux_x86_64.tar.gz"
-      sha256 "394dfbb0b6520efac2c544bda403671d62cb2f4a1cd795d798dfbf62bc5d72be"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/chroju/tfcloud/releases/download/v0.3.0/tfcloud_0.3.0_Linux_arm64.tar.gz"
+      sha256 "01da1b5a46ad23cb1cd942cafcaf9e69bbee09b0ae40541df5d21f8cde914f57"
 
       def install
         bin.install "tfcloud"
