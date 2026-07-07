@@ -5,21 +5,21 @@
 class Awscccli < Formula
   desc "Simple AWS CLI with Cloud Control API."
   homepage "https://github.com/chroju/awscccli"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/chroju/awscccli/releases/download/v0.0.1/awscccli_0.0.1_Darwin_x86_64.tar.gz"
-      sha256 "1c06d8a6848a54a420a30c7926c54c4ee84e3bbe6e5b1414c90591f79b204879"
+      url "https://github.com/chroju/awscccli/releases/download/v0.0.2/awscccli_0.0.2_Darwin_x86_64.tar.gz"
+      sha256 "0f49b736e55e20c48319a8bfd6c72ca7de5a3ad2d69099cfa27d26f600b1cfbe"
 
       def install
         bin.install "acc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/chroju/awscccli/releases/download/v0.0.1/awscccli_0.0.1_Darwin_arm64.tar.gz"
-      sha256 "2e7a0b4b92f2a5cfa3febc4c0769ba801073c6baf6a24d99aadeaac7c107fa3c"
+      url "https://github.com/chroju/awscccli/releases/download/v0.0.2/awscccli_0.0.2_Darwin_arm64.tar.gz"
+      sha256 "4d3563868f8e9d9219a34c23cf4ff1b1a7939f207c87fad5de41096085964a07"
 
       def install
         bin.install "acc"
@@ -29,16 +29,16 @@ class Awscccli < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/chroju/awscccli/releases/download/v0.0.1/awscccli_0.0.1_Linux_x86_64.tar.gz"
-      sha256 "603046abaea2cae2f111f6d8c51e81da663587d1bfb8da5b1ff348627a5f03c4"
+      url "https://github.com/chroju/awscccli/releases/download/v0.0.2/awscccli_0.0.2_Linux_x86_64.tar.gz"
+      sha256 "d01811b9667373e4d50e018baa7dc2d44e6f4321f7c98a6007589358026a744c"
 
       def install
         bin.install "acc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chroju/awscccli/releases/download/v0.0.1/awscccli_0.0.1_Linux_arm64.tar.gz"
-      sha256 "7f0c281828a1481f5e3fb254a9ce4c076b9fd261aee996c5dee7ca32c8077d88"
+      url "https://github.com/chroju/awscccli/releases/download/v0.0.2/awscccli_0.0.2_Linux_arm64.tar.gz"
+      sha256 "961012135b9fd78e8ad6d320a9672828b240f602c8299f67e56c21d8cf247f3b"
 
       def install
         bin.install "acc"

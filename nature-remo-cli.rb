@@ -5,24 +5,24 @@
 class NatureRemoCli < Formula
   desc "Unofficial command line interface for Nature Remo."
   homepage "https://github.com/chroju/nature-remo-cli"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/chroju/nature-remo-cli/releases/download/v0.3.0/nature-remo-cli_0.3.0_Darwin_x86_64.tar.gz"
-    sha256 "e75d5d6eebd2ba3e086e8cbd904421c1c21a41fce3b8671090693cc729927bf6"
+    url "https://github.com/chroju/nature-remo-cli/releases/download/v0.3.1/nature-remo-cli_0.3.1_Darwin_x86_64.tar.gz"
+    sha256 "91c33666cec28928144d3263f426cd0e9e053566795b78c8719b8cff31c8e6e9"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/chroju/nature-remo-cli/releases/download/v0.3.0/nature-remo-cli_0.3.0_Darwin_arm64.tar.gz"
-    sha256 "ed96553cb80eaa6de7b56d15d9d07f07b99168f3aed2099ee6d8b8e9a9f998f8"
+    url "https://github.com/chroju/nature-remo-cli/releases/download/v0.3.1/nature-remo-cli_0.3.1_Darwin_arm64.tar.gz"
+    sha256 "2ab20156cc3a6f653ceb0b4673dbbce125ad3cebe4c68434b635ef732767972e"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/chroju/nature-remo-cli/releases/download/v0.3.0/nature-remo-cli_0.3.0_Linux_x86_64.tar.gz"
-    sha256 "fa7eb2acceae1574e64db9579d6d4da8c700a1c33d8b193026cfa2c9ab3437ac"
+    url "https://github.com/chroju/nature-remo-cli/releases/download/v0.3.1/nature-remo-cli_0.3.1_Linux_x86_64.tar.gz"
+    sha256 "eae42c3dc3923609985ab31ba7da2c357ed0e7046cb9d0dfb22d7d8a85e3a260"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/chroju/nature-remo-cli/releases/download/v0.3.0/nature-remo-cli_0.3.0_Linux_arm64.tar.gz"
-    sha256 "528918d3f772a141b60cc2125402a2418c537fc73e34fed41aa8ecf30e13b364"
+    url "https://github.com/chroju/nature-remo-cli/releases/download/v0.3.1/nature-remo-cli_0.3.1_Linux_arm64.tar.gz"
+    sha256 "d715acf30a6c40cd2a0c8752b91ddb3756ddd955cb55e1212585e000dc9a9496"
   end
 
   def install

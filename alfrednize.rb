@@ -5,24 +5,24 @@
 class Alfrednize < Formula
   desc "alfrednize is a so simple command to generate JSON for Alfred."
   homepage "https://github.com/chroju/alfrednize"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/chroju/alfrednize/releases/download/v0.1.0/alfrednize_0.1.0_Darwin_x86_64.tar.gz"
-    sha256 "a05e903cfbf2687c8fb130b075e6d5067bacd6255c07c07b1952f9a95e5c2c23"
+    url "https://github.com/chroju/alfrednize/releases/download/v0.1.1/alfrednize_0.1.1_Darwin_x86_64.tar.gz"
+    sha256 "65b151bda1d10b8c73bc45b15f04ad8ec45f1666a5a09c6edfa4a2190b111cb3"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/chroju/alfrednize/releases/download/v0.1.0/alfrednize_0.1.0_Darwin_arm64.tar.gz"
-    sha256 "bcf544afa090b559809abd8fe4bd4dbf4a884f2f9575281c0ad142fa36d0c53b"
+    url "https://github.com/chroju/alfrednize/releases/download/v0.1.1/alfrednize_0.1.1_Darwin_arm64.tar.gz"
+    sha256 "eb367a946b6076ea56d202f9e8045fc6be6604679d2804b42f7da0d05398b946"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/chroju/alfrednize/releases/download/v0.1.0/alfrednize_0.1.0_Linux_x86_64.tar.gz"
-    sha256 "bcb70deb652e439d3f938cd9ae6ece52ec4d14447aa43cc4f3055979d73b5fa8"
+    url "https://github.com/chroju/alfrednize/releases/download/v0.1.1/alfrednize_0.1.1_Linux_x86_64.tar.gz"
+    sha256 "e58c3a87475da25a3c48669dee15c9e2affbdc8c0c6a31ebe7cbb9e15f3a54df"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/chroju/alfrednize/releases/download/v0.1.0/alfrednize_0.1.0_Linux_arm64.tar.gz"
-    sha256 "8f6552090f09fecbb2bea8f67e7fac26f136e30b8f7af26ef18699a4b6ca036d"
+    url "https://github.com/chroju/alfrednize/releases/download/v0.1.1/alfrednize_0.1.1_Linux_arm64.tar.gz"
+    sha256 "36ead2083edf3fd7c6b69ed2b901fa8b5ffce9a4a1a4a7761eb4c2f51374eccf"
   end
 
   def install
