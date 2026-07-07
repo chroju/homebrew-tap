@@ -1,0 +1,32 @@
+name: update-formulas
+
+on:
+  schedule:
+    - cron: '0 1 * * 1' # 毎週月曜 10:00 JST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - name: Update formulas
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 scripts/update_formulas.py
+
+      - name: Commit and push changes
+        run: |
+          if git diff --quiet; then
+            echo "no formula updates"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- '*.rb'
+          git commit -m "chore: update formulas to latest releases"
+          git push
