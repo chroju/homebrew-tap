@@ -8,6 +8,8 @@ class Tfcloud < Formula
   version "0.3.0"
   license "MIT"
 
+  deprecate! date: "2026-11-23", because: :repo_archived
+
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/chroju/tfcloud/releases/download/v0.3.0/tfcloud_0.3.0_Darwin_arm64.tar.gz"
